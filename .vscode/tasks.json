@@ -10,6 +10,25 @@
                 "isDefault": true
             },
             "problemMatcher": []
-        }
+        },
+        {
+            "label": "Maven: tomcat7-run",
+            "type": "shell",
+            "command": "mvn tomcat7:run",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": "Maven: clean install",
+        },
+        {
+            "label": "Maven: tomcat7-stop",
+            "type": "shell",
+            "command": "mvn tomcat7:shutdown",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
     ]
 }
