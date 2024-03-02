@@ -7,7 +7,6 @@
             "command": "mvn clean package",
             "group": {
                 "kind": "build",
-                "isDefault": true
             },
             "problemMatcher": []
         },
@@ -16,10 +15,11 @@
             "type": "shell",
             "command": "mvn tomcat7:run",
             "group": {
-                "kind": "test",
+                "kind": "build",
                 "isDefault": true
             },
             "dependsOn": "Maven: clean install",
+            "problemMatcher": []
         },
         {
             "label": "Maven: tomcat7-stop",
@@ -27,8 +27,7 @@
             "command": "mvn tomcat7:shutdown",
             "group": {
                 "kind": "test",
-                "isDefault": true
             }
-        },
+        }
     ]
 }
