@@ -25,9 +25,26 @@
             "label": "Maven: tomcat7-stop",
             "type": "shell",
             "command": "mvn tomcat7:shutdown",
-            "group": {
-                "kind": "test",
-            }
-        }
+        },
+{
+              "label": "Maven: tomcat7:debug",
+              "type": "shell",
+              "command": "set MAVEN_OPTS=\"$MAVEN_OPTS -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n\"; mvnDebug tomcat7:run",
+              "group": "build",
+              "isBackground": true,
+              "problemMatcher": [{
+                  "pattern": [{
+                      "regexp": "\\b\\B",
+                      "file": 1,
+                      "location": 2,
+                      "message": 3
+                  }],
+                  "background": {
+                      "activeOnStart": true,
+                      "beginsPattern": "^.*Listening for",
+                      "endsPattern": "^.*transport dt_socket at address.*"
+                  }
+              }]
+          }
     ]
 }
