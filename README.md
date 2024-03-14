@@ -7,8 +7,8 @@
 5. Right click on the project (src/main/webapp) and choose "Run on server" to deploy the project on the server.
 
 - Choose server -> your server
-- Add params -> no
-- Project name -> your project name (it will be your slug to view the project on the browser)
+- Add params -> yes -> your project name (it will be your slug to view the project on the browser)
+- Project name ->  empty
 
 5. Open your browser and go to http://localhost:8080/<your_project_name>
 
@@ -24,7 +24,7 @@
 
 ## 2. Simple way to deploy with your project name
 
-- When adding a project to the server, you keep project name empty, your slug will be http://localhost:8080/webapp
+- When adding a project to the server, you keep param empty, your slug will be http://localhost:8080/webapp
 - If you want to change the slug, you can change the webapp folder name to your desired name.
 
 ## 3. Builded folder of maven (target)
