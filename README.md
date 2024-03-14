@@ -36,7 +36,7 @@
 ## 4. Change webapp folder name / path
 
 - You need to change the path of classes too
-- Go to pom.xml, find "maven-compiler-plugin" and change the path of <outputDirectory> to your desired path.
+- Go to pom.xml, find "maven-compiler-plugin" and change the path of outputDirectory to your desired path.
 - This project files tree:
 
 ```
