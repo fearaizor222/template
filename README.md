@@ -10,7 +10,7 @@
 - Add params -> no
 - Project name -> your project name (it will be your slug to view the project on the browser)
 
-5. Open your browser and go to http://localhost:8080/(your-project-name)
+5. Open your browser and go to http://localhost:8080/<your_project_name>
 
 # NOTE
 
