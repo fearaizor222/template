@@ -8,7 +8,7 @@
 
 - Choose server -> your server
 - Add params -> yes -> your project name (it will be your slug to view the project on the browser)
-- Project name ->  empty
+- Project name -> empty
 
 5. Open your browser and go to http://localhost:8080/<your_project_name>
 
@@ -32,3 +32,26 @@
 - You can run the project by right click on the .war and choose "Run on server" without building the project by yourself, but it's doesn't have hot reload.
 
 - You can delete this folder, it will not affect your project.
+
+## 4. Change webapp folder name / path
+
+- You need to change the path of classes too
+- Go to pom.xml, find "maven-compiler-plugin" and change the path of <outputDirectory> to your desired path.
+- This project files tree:
+
+```
+|___src
+|      |_main
+|      |_java
+|      |  |_<controller_package>
+|      |
+|      |_webapp
+|           |_WEB-INF
+|               |_classes
+|               |_lib
+|               |_web.xml
+|               |_index.jsp
+|               |_...
+|
+|___pom.xml
+```
